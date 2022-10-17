@@ -3,10 +3,25 @@
   <head>
     <title>Absolutely-not-random meeting minutes</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="mystyle.css">
+
+    <style>
+      body {
+        background-color: hsl(30, 67%, 94%);
+      }
+      
+      h2 {
+        color: #800000;
+        margin-left: 20px;
+      }
+      </style>
   </head>
   <body>
-    <a href="#main-content">Skip to main content</a>
+    <a href="#main-content" target="_blank">Skip to main content</a>
     <header>
         <h1>HighTech Company Meeting Minutes</h1>
     </header>
@@ -28,22 +43,22 @@
         </div>
       </section>
         
-      <section>
-        <h2>Unfinihsed From Last Time</h2>
+      <section class="myFlex">
+        <h2 class="flexItem">Unfinihsed From Last Time</h2>
 
-        <ul>
-          <li>Finish the final design of iPhone 16, 17, and 18</li>
-          <li>Begin to <b>fix the bugs of Windows 11</b></li>
+        <ul class="flexItem">
+          <li class="flexSubItem">Finish the final design of iPhone 16, 17, and 18</li>
+          <li class="flexSubItem">Begin to <b>fix the bugs of Windows 11</b></li>
         </ul>
       </section>
 
-      <section>
-        <h2>New Things To Talk About</h2>
+      <section class="myFlex">
+        <h2 class="flexItem">New Things To Talk About</h2>
 
-        <ol>
-          <li>Figure out the meaning of <em>42</em></li>
-          <li>Recite the phrase "<i>Wub-Lub-Dub-Dub</i>"</li>
-          <li>Learn <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <ol class="flexItem">
+          <li class="flexSubItem">Figure out the meaning of <em>42</em></li>
+          <li class="flexSubItem">Recite the phrase "<i>Wub-Lub-Dub-Dub</i>"</li>
+          <li class="flexSubItem">Learn <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
             Quantum Mechanics</a></li>
         </ol>
 
@@ -57,11 +72,11 @@
         Question 3: Is all of this really make any sense?</p>
       </section>
 
-      <section>
-        <h2>Login to check out the development of Half Life 3</h2>
+      <section class="container">
+        <h2 class="item-a">Login to check out the development of Half Life 3</h2>
 
-        <form action="/action_page.php">
-          <fieldset>
+        <form class="item-b" action="/action_page.php">
+          <fieldset class="subItem">
             <label for="fname">User name:</label>
             <input type="text" id="fname" name="fname"><br><br>
             <label for="lname">Password:</label>
@@ -72,7 +87,7 @@
       </section>
 
       <section>
-        <h2>Some Comments</h2>
+        <h2 class="comment">Some Comments</h2>
         <form>
           <p><label>Review of this minutes:</label></p>
           <textarea> This meeting minute is awesome! I will use it every day from now on
@@ -100,7 +115,7 @@
 
       <p>We might give you one</p>
       
-      <form>
+      <form id="GPUform">
         <label for="GPU">Choose a graphics card:</label>
         <select name="GPU" id="GPU">
           <option value="rtx 4090">Rtx 4090</option>
@@ -112,7 +127,7 @@
         <input type="submit" value="Submit">
       </form>  
 
-      <button type="button">Guess what will happen?</button>
+      <button class="myButton" type="button">Guess what will happen?</button>
 
       <h1>Check More Details</h1>
 
@@ -130,9 +145,9 @@
 
     <h1>Diagram</h1>
     
-    <img src="./images/093019_0641_WhatisSoftw1.webp" alt="SWE">
+    <img id="myImg" src="./images/093019_0641_WhatisSoftw1.webp" alt="SWE">
 
-    <h1>Recording</h1>
+    <h1 id="myRecord">Recording</h1>
     
     <audio controls>
       <source src="./audio/Rick.mp3" type="audio/mpeg">
@@ -155,11 +170,11 @@
     </span></strong></p>
 
     <nav>
-      <a href="./images/">images</a>
+      <a href="./images/" target="_blank">images</a>
     </nav>
 
-    <footer>
-        <p>© 2024 Elongated Muskerate</p>
+    <footer class="myFooter">
+        <p style="color:blue;">© 2024 Elongated Muskerate</p>
     </footer>
   </body>
 </html>
